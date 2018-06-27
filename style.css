@@ -1,0 +1,28 @@
+table{
+    
+    margin: 0 auto;
+    width: 500px;
+    border: 1px solid black;
+    
+}
+td{
+    border: 1px solid black;
+}
+#inputi {
+    
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px;
+    
+    
+
+}
+#dugme{
+    margin: 0 auto;
+    width: 110px;
+    padding: 10px;
+}
+p{
+    text-align: center;
+    color: red;
+}

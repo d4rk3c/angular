@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="MyCtrl">
+        <table>
+            <th>Proizvodi</th>
+            <th>Kolicina (g)</th>
+            <tr ng-repeat="x in products">
+                    <td >{{x.names}}</td>
+                    <td>{{x.quantity}}</td>
+                
+            </tr>
+           <td><i>Ukupna tezina:</i></td>
+           <td><b>{{sum}}</b></td> 
+
+        </table>
+        <br>
+        <div id="inputi"><input placeholder="Unesite potrebne namirnice" ng-model="noveNamirnice">
+            <input type="number" placeholder="Unesite kolicinu u gr" ng-model="kolicina">
+        </div>
+        <div id="dugme" ng-click="dodaj($index)"><button>Potvrdi!</button>
+            
+        </div>
+        <p>{{errorText}}</p>
+        
+        
+     
+    </div>
+    
+</body>
+<script src="angular.js"></script>
+</html>
